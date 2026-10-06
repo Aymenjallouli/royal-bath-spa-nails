@@ -1,0 +1,1049 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Royal Bath Spa Nails, nail salon in Bath</title>
+<meta name="description" content="Nail salon at 3 Beau Street, Bath: BIAB, gel manicures, pedicures and hand-painted nail art. Rated 4.9 from 52 Google reviews.">
+<meta name="theme-color" content="#24357F">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Royal Bath Spa Nails, nail salon in Bath">
+<meta property="og:description" content="BIAB, gel, pedicures and hand-painted nail art at 3 Beau Street, Bath. Rated 4.9 from 52 Google reviews.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2324357F'/%3E%3Cpath d='M15 43l3-21 9 10 5-14 5 14 9-10 3 21z' fill='none' stroke='%23D9BC82' stroke-width='3.5' stroke-linejoin='round'/%3E%3Cpath d='M16 50h32' stroke='%23D9BC82' stroke-width='3.5' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Jost:wght@400;500&display=swap">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NailSalon",
+  "name": "Royal Bath Spa Nails",
+  "telephone": "+447900889999",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "3 Beau Street",
+    "addressLocality": "Bath",
+    "postalCode": "BA1 1QY",
+    "addressCountry": "GB"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 51.3803569, "longitude": -2.3603012 },
+  "hasMap": "https://www.google.com/maps/place/?q=place_id:ChIJ3zgg01-BcUgRT_hQ7wwZ5sU",
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "opens": "09:30",
+    "closes": "19:30"
+  }],
+  "sameAs": ["https://www.fresha.com/a/royal-bath-spa-nails-bath-3-beau-street-y4ey518a"]
+}
+</script>
+<style>
+/* ------------------------------------------------------------------
+   ROYAL BATH SPA NAILS · design decisions
+   Palette: taken from the salon's own photos. Ivory and warm stone (--bg, --line) come from
+   the curved plaster walls and boucle chairs. Gold (--accent) comes from the colour-chart frame,
+   the birdcage cake stands and the crown on their business card. Royal cobalt (--brand) is the
+   polka-dot nail that recurs in their nail-art photos, and it answers the "Royal" in the name.
+   Ink is a warm espresso, never pure black. One strong colour move: the price list sits on a
+   full cobalt field with a faint polka-dot pattern.
+   Type: Instrument Serif (roman + italic) for display, a nod to the classical serif on the
+   shopfront fascia. Jost 400/500, a Futura-like sans, keeps the body clean and current.
+   Hero: split editorial. Oversized headline on the left; the lounge photo on the right in an arch
+   frame (the arch repeats the salon's alcoves and Bath's Georgian windows), a thin gold outline
+   offset behind it and an oval nail-art inset.
+   Rhythm: ivory hero → reviews with an oversized 4.9 → cobalt prices → photo grid →
+   visit (live hours, shopfront, map) → booking list → espresso footer.
+------------------------------------------------------------------- */
+:root{
+  --bg:#F5EFE6;
+  --surface:#FFFBF5;
+  --ink:#211C17;
+  --ink-soft:#5F554A;
+  --brand:#24357F;
+  --brand-deep:#1B2866;
+  --brand-ink:#FBF6EC;
+  --accent:#A97F3C;
+  --accent-soft:#D9BC82;
+  --gold-ink:#7D5E27;
+  --line:#E4DACB;
+  --open:#2E7A4E;
+  --soon:#B4651E;
+  --closed:#A6402F;
+
+  --font-display:"Instrument Serif", "Iowan Old Style", "Times New Roman", serif;
+  --font-body:"Jost", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --step--1:clamp(.875rem, .85rem + .12vw, .9375rem);
+  --step-0:clamp(1.0625rem, 1.02rem + .2vw, 1.1875rem);
+  --step-1:clamp(1.25rem, 1.15rem + .45vw, 1.5rem);
+  --step-2:clamp(1.5rem, 1.3rem + .95vw, 2.125rem);
+  --step-3:clamp(2rem, 1.55rem + 2vw, 3.25rem);
+  --step-4:clamp(2.6rem, 1.9rem + 3.4vw, 4.6rem);
+  --step-5:clamp(3.1rem, 2.2rem + 4.4vw, 5.4rem);
+
+  --space-1:4px; --space-2:8px; --space-3:12px; --space-4:16px; --space-5:24px;
+  --space-6:32px; --space-7:48px; --space-8:64px; --space-9:96px;
+  --section:clamp(56px, 10vw, 128px);
+  --gutter:clamp(16px, 5vw, 40px);
+  --container:1200px;
+
+  --r-sm:10px; --r-md:20px; --r-lg:32px;
+  --shadow-1:0 1px 2px rgba(33,28,23,.06), 0 2px 10px rgba(33,28,23,.05);
+  --shadow-2:0 2px 4px rgba(33,28,23,.05), 0 14px 34px -10px rgba(33,28,23,.20);
+  --shadow-3:0 4px 10px rgba(33,28,23,.06), 0 34px 70px -24px rgba(33,28,23,.34);
+
+  --ease:cubic-bezier(.2,.7,.2,1);
+  --header-h:64px;
+}
+
+/* ---------- base ---------- */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 12px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:var(--step-0);line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3{font-family:var(--font-display);font-weight:400;line-height:1.05;letter-spacing:-.015em;margin:0;text-wrap:balance}
+p,ul,ol,figure,blockquote{margin:0}
+p{text-wrap:pretty}
+ul{padding:0;list-style:none}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--brand);outline-offset:3px;border-radius:6px}
+.services :focus-visible,.site-footer :focus-visible,.lightbox :focus-visible,.g-tile:focus-visible{outline-color:var(--accent-soft)}
+section[id]{scroll-margin-top:calc(var(--header-h) + 8px)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.container{width:min(100% - 2 * var(--gutter), var(--container));margin-inline:auto}
+.section{padding-block:var(--section)}
+.skip{position:absolute;left:12px;top:-80px;z-index:100;display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;background:var(--ink);color:var(--surface);text-decoration:none;font-weight:500}
+.skip:focus{top:12px}
+.i{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+
+.eyebrow{display:flex;align-items:center;gap:var(--space-3);font-size:var(--step--1);font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-ink)}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor;flex:none}
+.lead{font-size:var(--step-1);line-height:1.5;color:var(--ink-soft);max-width:34ch}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:999px;border:1px solid transparent;font:500 1rem/1.1 var(--font-body);letter-spacing:.01em;text-decoration:none;white-space:nowrap;transition:transform .3s var(--ease)}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0)}
+.btn-brand{background:var(--brand);color:var(--brand-ink);box-shadow:var(--shadow-1)}
+.btn-brand:hover{background:var(--brand-deep)}
+.btn-ghost{border-color:#CFC2AE;color:var(--ink);background:rgba(255,251,245,.6)}
+.btn-ghost:hover{border-color:var(--ink)}
+.btn-gold{border-color:var(--accent-soft);color:var(--brand-ink)}
+.btn-gold:hover{background:rgba(217,188,130,.12)}
+.link-arrow{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-weight:500;color:var(--brand);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}
+.link-arrow .i{width:18px;height:18px;transition:transform .3s var(--ease)}
+.link-arrow:hover .i{transform:translate(2px,-2px)}
+.stars{display:inline-flex;gap:2px;color:var(--accent)}
+.stars svg{width:16px;height:16px;fill:currentColor}
+
+/* ---------- header ---------- */
+.site-header{position:sticky;top:0;z-index:40;background:rgba(245,239,230,.94);-webkit-backdrop-filter:saturate(1.2) blur(10px);backdrop-filter:saturate(1.2) blur(10px);border-bottom:1px solid transparent}
+.site-header.is-scrolled{border-bottom-color:var(--line);box-shadow:var(--shadow-1)}
+.header-inner{display:flex;align-items:center;gap:var(--space-2);min-height:var(--header-h)}
+.wordmark{display:inline-flex;align-items:center;gap:var(--space-2);min-height:44px;margin-right:auto;text-decoration:none;color:var(--ink)}
+.wordmark svg{width:26px;height:26px;color:var(--accent);flex:none}
+.wordmark span{font-family:var(--font-display);font-size:1.25rem;line-height:1;white-space:nowrap;letter-spacing:-.005em}
+.nav-desktop{display:none}
+.header-book{min-height:44px;padding:0 18px;font-size:.9375rem}
+.burger{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:999px;border:1px solid #CFC2AE;background:transparent;padding:0}
+.burger .i{width:22px;height:22px}
+.burger .i-close{display:none}
+.burger[aria-expanded="true"] .i-open{display:none}
+.burger[aria-expanded="true"] .i-close{display:block}
+.menu{position:fixed;inset:var(--header-h) 0 0 0;z-index:39;background:var(--bg);overflow-y:auto;visibility:hidden;opacity:0;transform:translateY(-8px);transition:opacity .3s var(--ease),transform .3s var(--ease),visibility 0s linear .3s}
+.menu.is-open{visibility:visible;opacity:1;transform:none;transition:opacity .3s var(--ease),transform .3s var(--ease)}
+.menu-inner{display:flex;flex-direction:column;gap:var(--space-7);padding-block:var(--space-6) calc(var(--space-8) + env(safe-area-inset-bottom))}
+.menu-links a{display:flex;align-items:center;justify-content:space-between;min-height:64px;border-bottom:1px solid var(--line);font-family:var(--font-display);font-size:2.25rem;line-height:1;text-decoration:none}
+.menu-links a .i{color:var(--accent)}
+.menu-foot{display:grid;gap:var(--space-3)}
+.menu-foot p{color:var(--ink-soft);margin-top:var(--space-2)}
+body.menu-open{overflow:hidden}
+
+/* ---------- hero ---------- */
+.hero{padding-block:var(--space-6) var(--section);overflow:hidden}
+.hero-grid{display:grid;gap:var(--space-7)}
+.hero-copy{display:flex;flex-direction:column;align-items:flex-start;gap:var(--space-4)}
+.hero h1{font-size:var(--step-5);line-height:1.02;letter-spacing:-.025em}
+.hero h1 em{display:block;font-style:italic;color:var(--brand)}
+.hero-lead{font-size:var(--step-1);line-height:1.45;color:var(--ink-soft);max-width:30ch}
+.rating-chip{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 16px 0 14px;border:1px solid var(--line);border-radius:999px;background:var(--surface);text-decoration:none;font-size:1rem;box-shadow:var(--shadow-1);margin-top:var(--space-1)}
+.rating-chip strong{font-weight:500}
+.rating-chip .muted{color:var(--ink-soft)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:var(--space-3);width:100%;margin-top:var(--space-2)}
+.hero-cta .btn{flex:1 1 0}
+.live{display:inline-flex;align-items:center;gap:10px;font-size:1rem;color:var(--ink-soft)}
+.live .dot{position:relative;width:10px;height:10px;border-radius:50%;background:var(--ink-soft);flex:none}
+.live[data-state="open"] .dot{background:var(--open)}
+.live[data-state="soon"] .dot{background:var(--soon)}
+.live[data-state="closed"] .dot{background:var(--closed)}
+.live[data-state="open"] .dot::after{content:"";position:absolute;inset:0;border-radius:50%;background:var(--open);animation:pulse 2.4s var(--ease) infinite}
+.live strong{color:var(--ink);font-weight:500}
+@keyframes pulse{0%{transform:scale(1);opacity:.55}80%,100%{transform:scale(2.8);opacity:0}}
+
+.hero-media{position:relative;padding-top:14px}
+.arch-frame{position:relative;width:82%;margin-left:auto;aspect-ratio:4/5}
+.arch-frame::before{content:"";position:absolute;inset:-14px 14px 14px -14px;border:1px solid var(--accent);border-radius:50% 50% var(--r-md) var(--r-md) / 40% 40% var(--r-md) var(--r-md);pointer-events:none}
+.arch{position:relative;height:100%;overflow:hidden;border-radius:50% 50% var(--r-md) var(--r-md) / 40% 40% var(--r-md) var(--r-md);box-shadow:var(--shadow-3);background:var(--line)}
+.arch img{width:100%;height:100%;object-fit:cover;object-position:50% 60%;animation:kenburns 26s var(--ease) infinite alternate;transform-origin:60% 70%}
+@keyframes kenburns{from{transform:scale(1.02)}to{transform:scale(1.1)}}
+.oval{position:absolute;left:0;bottom:7%;width:36%;aspect-ratio:3/4;border-radius:50%;overflow:hidden;border:5px solid var(--bg);box-shadow:var(--shadow-2);background:var(--line)}
+.oval img{width:100%;height:100%;object-fit:cover;object-position:40% 62%}
+.hero-note{position:absolute;right:6%;bottom:-6px;transform:translateY(50%);display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;background:var(--surface);box-shadow:var(--shadow-2);font-size:var(--step--1);color:var(--ink-soft);white-space:nowrap}
+.hero-note svg{width:16px;height:16px;color:var(--accent)}
+
+/* ---------- reviews ---------- */
+.reviews{background:var(--surface);border-block:1px solid var(--line)}
+.reviews-head{display:grid;gap:var(--space-4);max-width:40rem}
+.reviews-head h2{font-size:var(--step-4);line-height:1.04}
+.reviews-grid{display:grid;gap:var(--space-7);margin-top:var(--space-7)}
+.score{display:grid;gap:var(--space-2);align-content:start}
+.score-num{font-family:var(--font-display);font-size:clamp(7rem, 4rem + 14vw, 13rem);line-height:.8;letter-spacing:-.04em;color:var(--brand)}
+.score .stars svg{width:22px;height:22px}
+.score-meta{font-size:var(--step-1);color:var(--ink)}
+.score-meta .muted{color:var(--ink-soft)}
+.feature{display:grid;gap:var(--space-6);align-content:start}
+.feature-quote{position:relative;padding-left:var(--space-5);border-left:2px solid var(--accent)}
+.feature-quote p{font-family:var(--font-display);font-size:var(--step-3);line-height:1.12;letter-spacing:-.01em}
+.feature-quote footer{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-2) var(--space-3);margin-top:var(--space-4);font-size:1rem;color:var(--ink-soft)}
+.feature-quote cite{font-style:normal;font-weight:500;color:var(--ink)}
+.topics-label{font-size:var(--step--1);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);font-weight:500;margin-bottom:var(--space-3)}
+.topics{display:flex;flex-wrap:wrap;gap:var(--space-2)}
+.topics li{display:inline-flex;align-items:center;gap:8px;padding:7px 8px 7px 14px;border-radius:999px;border:1px solid var(--line);background:var(--bg);font-size:1rem}
+.topics b{display:inline-grid;place-items:center;min-width:28px;height:28px;padding:0 7px;border-radius:999px;background:var(--brand);color:var(--brand-ink);font-weight:500;font-size:.875rem}
+.topics li:not(:first-child) b{background:var(--line);color:var(--ink)}
+
+.rail{display:grid;grid-auto-flow:column;grid-auto-columns:min(84%, 380px);gap:var(--space-4);overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;padding:var(--space-2) max(var(--gutter), calc((100% - var(--container)) / 2)) var(--space-5);scroll-padding-inline:max(var(--gutter), calc((100% - var(--container)) / 2));margin-top:var(--space-8);scrollbar-width:none}
+.rail::-webkit-scrollbar{display:none}
+.card{scroll-snap-align:start;display:flex;flex-direction:column;gap:var(--space-4);padding:var(--space-6) var(--space-5) var(--space-5);border-radius:var(--r-md);background:var(--bg);border:1px solid var(--line)}
+.card blockquote{flex:1}
+.card blockquote p{font-size:1.0625rem;line-height:1.6}
+.card footer{display:flex;align-items:center;gap:var(--space-3);padding-top:var(--space-4);border-top:1px solid var(--line)}
+.avatar{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--brand);color:var(--brand-ink);font-family:var(--font-display);font-size:1.25rem;flex:none}
+.card cite{font-style:normal;font-weight:500;display:block;line-height:1.3}
+.card time{font-size:.9375rem;color:var(--ink-soft)}
+.rail-bar{display:none}
+.rail-btns{display:flex;gap:var(--space-2)}
+.rail-btn{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;border:1px solid #CFC2AE;background:var(--surface);transition:transform .3s var(--ease),opacity .3s var(--ease)}
+.rail-btn:hover:not(:disabled){transform:scale(1.06)}
+.rail-btn:disabled{opacity:.35;cursor:default}
+
+/* ---------- services ---------- */
+.services{position:relative;overflow:hidden;background:var(--brand);color:var(--brand-ink)}
+.services::before{content:"";position:absolute;top:0;right:0;width:min(70vw, 640px);height:min(70vw, 640px);background-image:radial-gradient(circle, rgba(251,246,236,.13) 2.5px, transparent 3px);background-size:26px 26px;-webkit-mask-image:radial-gradient(circle at 100% 0, #000 0, transparent 70%);mask-image:radial-gradient(circle at 100% 0, #000 0, transparent 70%);pointer-events:none}
+.services .container{position:relative}
+.services .eyebrow{color:var(--accent-soft)}
+.services-head{display:grid;gap:var(--space-4)}
+.services-head h2{font-size:var(--step-4);max-width:13ch}
+.services-head > p{color:rgba(251,246,236,.82);max-width:42ch}
+.menu-cols{display:grid;gap:var(--space-7);margin-top:var(--space-8)}
+.menu-group h3{display:flex;align-items:baseline;justify-content:space-between;gap:var(--space-4);font-size:var(--step-3);font-style:italic;color:var(--accent-soft);padding-bottom:var(--space-3);border-bottom:1px solid rgba(217,188,130,.55)}
+.menu-group h3 small{font:500 var(--step--1)/1 var(--font-body);font-style:normal;letter-spacing:.12em;text-transform:uppercase;color:rgba(251,246,236,.75)}
+.price-list li{display:grid;grid-template-columns:24px 1fr auto;align-items:center;gap:var(--space-4);padding-block:var(--space-4);border-bottom:1px solid rgba(251,246,236,.16)}
+.swatch{width:24px;height:34px;stroke:rgba(251,246,236,.55);stroke-width:1}
+.svc-name{display:block;font-family:var(--font-display);font-size:var(--step-2);line-height:1.1}
+.svc-time{display:block;font-size:.9375rem;color:rgba(251,246,236,.75);margin-top:2px}
+.svc-price{font-family:var(--font-display);font-size:var(--step-2);line-height:1;color:var(--accent-soft);text-align:right;white-space:nowrap}
+.svc-price small{display:block;font:500 .8125rem/1.2 var(--font-body);letter-spacing:.1em;text-transform:uppercase;color:rgba(251,246,236,.75);margin-bottom:4px}
+.menu-note{display:flex;gap:var(--space-3);margin-top:var(--space-5);color:rgba(251,246,236,.85);font-size:1rem;line-height:1.55}
+.menu-note .i{color:var(--accent-soft);margin-top:2px}
+.services-foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--space-5);margin-top:var(--space-8);padding-top:var(--space-6);border-top:1px solid rgba(251,246,236,.16)}
+.services-foot p{max-width:44ch;color:rgba(251,246,236,.85)}
+
+/* ---------- gallery ---------- */
+.gallery-head{display:grid;gap:var(--space-5);align-items:end}
+.gallery-head h2{font-size:var(--step-4);max-width:12ch}
+.gallery-head h2 em{color:var(--brand)}
+.gallery-head > p{color:var(--ink-soft);max-width:40ch}
+.g-wrap{container-type:inline-size;margin-top:var(--space-7)}
+.g-grid{--cols:2;--gap:8px;display:grid;grid-template-columns:repeat(var(--cols), 1fr);grid-auto-rows:170px;grid-auto-rows:calc((100cqi - (var(--cols) - 1) * var(--gap)) / var(--cols));grid-auto-flow:dense;gap:var(--gap)}
+.g-item{position:relative;display:block;padding:0;border:0;border-radius:var(--r-sm);overflow:hidden;background:var(--line);cursor:zoom-in}
+.g-item img{width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
+.g-item:hover img{transform:scale(1.04)}
+.g-item::after{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:inset 0 0 0 1px rgba(33,28,23,.06);pointer-events:none}
+.g-2x2{grid-column:span 2;grid-row:span 2}
+.g-1x2{grid-row:span 2}
+.g-2x1{grid-column:span 2}
+.g-tile{display:flex;flex-direction:column;justify-content:space-between;padding:var(--space-4);border-radius:var(--r-sm);background:var(--brand);color:var(--brand-ink);text-decoration:none;position:relative;overflow:hidden}
+.g-tile::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle, rgba(251,246,236,.12) 2px, transparent 2.5px);background-size:20px 20px;-webkit-mask-image:linear-gradient(200deg, #000, transparent 60%);mask-image:linear-gradient(200deg, #000, transparent 60%)}
+.g-tile > *{position:relative}
+.g-tile small{font-size:.8125rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-soft);font-weight:500}
+.g-tile strong{display:block;font-family:var(--font-display);font-weight:400;font-size:clamp(2rem, 1.4rem + 2.4vw, 3.4rem);line-height:.95}
+.g-tile span{display:inline-flex;align-items:center;gap:6px;font-size:.9375rem;font-weight:500}
+.g-tile span .i{width:16px;height:16px;transition:transform .3s var(--ease)}
+.g-tile:hover span .i{transform:translateX(3px)}
+
+.lightbox{width:100%;max-width:100%;height:100%;max-height:100%;margin:0;padding:0;border:0;background:rgba(18,15,12,.95);color:#F5EFE6}
+.lightbox[open]{display:grid;grid-template-rows:auto 1fr auto;animation:fade .35s var(--ease)}
+.lightbox::backdrop{background:rgba(18,15,12,.7)}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.lb-top{display:flex;align-items:center;justify-content:space-between;padding:var(--space-3) var(--gutter);font-size:.9375rem;color:rgba(245,239,230,.8)}
+.lb-stage{display:grid;place-items:center;min-height:0;padding:0 var(--space-3)}
+.lb-stage img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;border-radius:var(--r-sm)}
+.lb-bottom{display:flex;align-items:center;justify-content:space-between;gap:var(--space-4);padding:var(--space-4) var(--gutter) calc(var(--space-4) + env(safe-area-inset-bottom))}
+.lb-bottom p{flex:1;text-align:center;font-size:1rem}
+.lb-btn{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;border:1px solid rgba(245,239,230,.3);background:rgba(245,239,230,.06);color:#F5EFE6;flex:none}
+.lb-btn:hover{background:rgba(245,239,230,.14)}
+
+/* ---------- visit ---------- */
+.visit{background:var(--surface);border-top:1px solid var(--line)}
+.visit-head{display:grid;gap:var(--space-4);max-width:44rem}
+.visit-head h2{font-size:var(--step-4)}
+.visit-head > p:not(.eyebrow){color:var(--ink-soft)}
+.visit-grid{display:grid;gap:var(--space-6);margin-top:var(--space-7)}
+.hours-card{padding:var(--space-5);border-radius:var(--r-md);background:var(--bg);border:1px solid var(--line)}
+.hours-top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--space-2) var(--space-4);margin-bottom:var(--space-4)}
+.hours-top h3{font-size:var(--step-2)}
+.hours{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.hours th,.hours td{padding:12px 10px;border-bottom:1px solid var(--line);text-align:left;font-weight:400}
+.hours td{text-align:right;white-space:nowrap}
+.hours tr:last-child th,.hours tr:last-child td{border-bottom:0}
+.hours .is-closed td{color:var(--ink-soft)}
+.hours tr.is-today th,.hours tr.is-today td{background:var(--brand);color:var(--brand-ink);font-weight:500;border-bottom-color:transparent}
+.hours tr.is-today th{border-radius:var(--r-sm) 0 0 var(--r-sm)}
+.hours tr.is-today td{border-radius:0 var(--r-sm) var(--r-sm) 0}
+.today-tag{display:inline-block;margin-left:8px;padding:2px 8px;border-radius:999px;background:rgba(251,246,236,.16);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;vertical-align:2px}
+.visit-actions{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-3);margin-top:var(--space-5)}
+.address{display:flex;gap:var(--space-3);margin-top:var(--space-5);padding-top:var(--space-5);border-top:1px solid var(--line)}
+.address .i{color:var(--accent);margin-top:4px}
+.address strong{display:block;font-weight:500}
+.address span{color:var(--ink-soft)}
+.shopfront{position:relative}
+.shopfront .frame{aspect-ratio:1/1;overflow:hidden;border-radius:50% 50% var(--r-md) var(--r-md) / 50% 50% var(--r-md) var(--r-md);background:var(--line);box-shadow:var(--shadow-2)}
+.shopfront img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.shopfront figcaption{margin-top:var(--space-3);font-size:1rem;color:var(--ink-soft);display:flex;gap:var(--space-2);align-items:center}
+.shopfront figcaption::before{content:"";width:20px;height:1px;background:var(--accent)}
+.map{position:relative;margin-top:var(--space-6);aspect-ratio:4/3;border-radius:var(--r-md);overflow:hidden;border:1px solid var(--line);background:var(--bg) radial-gradient(circle, rgba(36,53,127,.10) 1.5px, transparent 2px) 0 0/22px 22px}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;z-index:1}
+.map-fallback{position:absolute;inset:0;display:grid;place-items:center;padding:var(--space-5);text-align:center}
+.map-fallback a{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 18px;border-radius:999px;background:var(--surface);border:1px solid var(--line);text-decoration:none;font-weight:500}
+.map-link{margin-top:var(--space-2)}
+
+/* ---------- contact ---------- */
+.contact-grid{display:grid;gap:var(--space-7)}
+.contact-copy{display:grid;gap:var(--space-4);align-content:start}
+.contact-copy h2{font-size:var(--step-4);max-width:12ch}
+.contact-copy > p:not(.eyebrow){color:var(--ink-soft);max-width:38ch}
+.contact-list{border-bottom:1px solid #D5C9B6}
+.contact-list a{display:grid;grid-template-columns:52px 1fr 24px;align-items:center;gap:var(--space-4);padding-block:var(--space-5);border-top:1px solid #D5C9B6;text-decoration:none}
+.c-icon{display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--surface);border:1px solid var(--line);color:var(--brand);transition:transform .3s var(--ease)}
+.contact-list a:first-child .c-icon{background:var(--brand);color:var(--brand-ink);border-color:var(--brand)}
+.c-title{display:block;font-family:var(--font-display);font-size:var(--step-2);line-height:1.1}
+.c-sub{display:block;font-size:1rem;color:var(--ink-soft);margin-top:2px}
+.c-arrow{color:var(--accent);transition:transform .3s var(--ease)}
+.contact-list a:hover .c-arrow{transform:translateX(4px)}
+.contact-list a:hover .c-icon{transform:scale(1.06)}
+
+/* ---------- footer ---------- */
+.site-footer{background:var(--ink);color:#EDE5D8;padding-block:var(--space-8) var(--space-6)}
+.footer-grid{display:grid;gap:var(--space-6)}
+.site-footer .wordmark{color:#F5EFE6}
+.site-footer .wordmark span{font-size:1.625rem}
+.footer-tag{color:#B8AC9C;margin-top:var(--space-3);max-width:30ch}
+.footer-col h3{font:500 var(--step--1)/1.2 var(--font-body);letter-spacing:.14em;text-transform:uppercase;color:var(--accent-soft);margin-bottom:var(--space-3)}
+.footer-col p{color:#D9CFC0}
+.footer-col a{display:flex;align-items:center;min-height:44px;text-decoration:none;color:#EDE5D8}
+.footer-col a:hover{color:var(--accent-soft)}
+.footer-small{display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--space-3);margin-top:var(--space-7);padding-top:var(--space-5);border-top:1px solid rgba(237,229,216,.14);font-size:.9375rem;color:#B8AC9C}
+
+/* ---------- sticky action bar (mobile) ---------- */
+.action-bar{position:fixed;left:0;right:0;bottom:0;z-index:45;display:grid;grid-template-columns:repeat(3, 1fr);gap:1px;background:var(--line);border-top:1px solid var(--line);box-shadow:0 -10px 30px -12px rgba(33,28,23,.25);padding-bottom:env(safe-area-inset-bottom)}
+.action-bar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:60px;background:var(--surface);text-decoration:none;font-size:.9375rem;font-weight:500;color:var(--ink)}
+.action-bar a .i{width:22px;height:22px;color:var(--brand)}
+.action-bar a.primary{background:var(--brand);color:var(--brand-ink)}
+.action-bar a.primary .i{color:var(--accent-soft)}
+body{padding-bottom:calc(61px + env(safe-area-inset-bottom))}
+
+/* ---------- reveal ---------- */
+.js .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+.js .reveal.is-in{opacity:1;transform:none}
+
+/* ---------- breakpoints ---------- */
+@media (max-width:359px){
+  .header-book{display:none}
+  .hero-cta .btn{flex-basis:100%}
+}
+@media (min-width:640px){
+  .hero-cta{width:auto}
+  .hero-cta .btn{flex:0 0 auto}
+  .menu-cols{grid-template-columns:1fr 1fr;gap:var(--space-7) var(--space-8)}
+  .g-grid{--gap:12px;grid-auto-rows:calc((100cqi - (var(--cols) - 1) * var(--gap)) / var(--cols) * .72)}
+  .visit-grid{grid-template-columns:1.15fr .85fr;align-items:start}
+  .map{aspect-ratio:16/8}
+  .shopfront .frame{aspect-ratio:4/5;border-radius:50% 50% var(--r-md) var(--r-md) / 40% 40% var(--r-md) var(--r-md)}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .card{padding:var(--space-6)}
+  .rail-bar{display:flex;justify-content:flex-end}
+}
+@media (min-width:768px){
+  .action-bar{display:none}
+  body{padding-bottom:0}
+}
+@media (min-width:960px){
+  :root{--header-h:76px}
+  .wordmark svg{width:30px;height:30px}
+  .wordmark span{font-size:1.5rem}
+  .nav-desktop{display:flex;gap:var(--space-1);margin-right:var(--space-4)}
+  .nav-desktop a{position:relative;display:inline-flex;align-items:center;min-height:44px;padding:0 14px;text-decoration:none;font-weight:500;font-size:.9875rem}
+  .nav-desktop a::after{content:"";position:absolute;left:14px;right:14px;bottom:8px;height:1px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
+  .nav-desktop a:hover::after{transform:scaleX(1)}
+  .header-book{min-height:48px;padding:0 22px}
+  .burger,.menu{display:none}
+  .hero{padding-block:var(--space-7) var(--space-9)}
+  .hero-grid{grid-template-columns:minmax(0, 1.08fr) minmax(0, .92fr);align-items:center;gap:var(--space-8);min-height:min(calc(100svh - var(--header-h) - 96px), 760px)}
+  .hero-copy{gap:var(--space-5)}
+  .hero-media{padding-top:0}
+  .arch-frame{width:min(86%, calc((100svh - var(--header-h) - 120px) * .8))}
+  .oval{width:34%;bottom:9%}
+  .reviews-grid{grid-template-columns:5fr 7fr;gap:var(--space-8);align-items:start}
+  .score{position:sticky;top:calc(var(--header-h) + 24px)}
+  .services-head{grid-template-columns:1fr 1fr;align-items:end;gap:var(--space-8)}
+  .services-head > p{justify-self:end}
+  .menu-cols{gap:var(--space-9)}
+  .gallery-head{grid-template-columns:1.2fr 1fr;gap:var(--space-8)}
+  .gallery-head > p{justify-self:end}
+  .g-grid{--cols:4;--gap:16px;grid-auto-rows:calc((100cqi - (var(--cols) - 1) * var(--gap)) / var(--cols))}
+  .hours-card{padding:var(--space-6)}
+  .visit-grid{gap:var(--space-8)}
+  .map{aspect-ratio:21/8}
+  .contact-grid{grid-template-columns:5fr 7fr;gap:var(--space-9);align-items:start}
+  .footer-grid{grid-template-columns:1.6fr 1fr 1fr 1fr;gap:var(--space-7)}
+}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none !important;transition:none !important}
+  .js .reveal{opacity:1;transform:none}
+}
+</style>
+<!--sf:preview--><meta name="robots" content="noindex, nofollow"><!--/sf:preview-->
+<!--sf:og--><meta property="og:image" content="https://royal-bath-spa-nails.aymenjallouli.dev/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:url" content="https://royal-bath-spa-nails.aymenjallouli.dev/"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://royal-bath-spa-nails.aymenjallouli.dev/og.jpg"><!--/sf:og-->
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="g-ombre" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#EBC3BE"/><stop offset="1" stop-color="#FBF6EC"/></linearGradient>
+  </defs>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></symbol>
+  <symbol id="i-crown" viewBox="0 0 32 32"><path d="M6 23 7.7 10.5 12.6 16 16 7.5l3.4 8.5 4.9-5.5L26 23Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M6.5 27h19" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="16" cy="5.2" r="1.3" fill="currentColor"/><circle cx="7.5" cy="8.4" r="1.1" fill="currentColor"/><circle cx="24.5" cy="8.4" r="1.1" fill="currentColor"/></symbol>
+  <symbol id="nail" viewBox="0 0 24 34"><path d="M12 1.5c5.2 0 8.5 5.6 8.5 13.5v12.5a5 5 0 0 1-5 5h-7a5 5 0 0 1-5-5V15C3.5 7.1 6.8 1.5 12 1.5z"/><path d="M8 8.5c.8-2.4 2-3.6 3.4-3.9" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="1.4" stroke-linecap="round"/></symbol>
+  <symbol id="nail-dots" viewBox="0 0 24 34"><path d="M12 1.5c5.2 0 8.5 5.6 8.5 13.5v12.5a5 5 0 0 1-5 5h-7a5 5 0 0 1-5-5V15C3.5 7.1 6.8 1.5 12 1.5z" fill="#F4EEE6"/><g fill="#E2793E" stroke="none"><circle cx="9" cy="11" r="1.5"/><circle cx="15" cy="14" r="1.5"/><circle cx="9.5" cy="19" r="1.5"/><circle cx="15" cy="23" r="1.5"/><circle cx="9.5" cy="27" r="1.5"/></g></symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a class="wordmark" href="#top" aria-label="Royal Bath Spa Nails, back to top">
+      <svg aria-hidden="true"><use href="#i-crown"/></svg>
+      <span>Royal Bath Spa Nails</span>
+    </a>
+    <nav class="nav-desktop" aria-label="Main">
+      <a href="#reviews">Reviews</a>
+      <a href="#services">Prices</a>
+      <a href="#gallery">Nail art</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="btn btn-brand header-book" href="https://www.fresha.com/a/royal-bath-spa-nails-bath-3-beau-street-y4ey518a" target="_blank" rel="noopener">Book</a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+      <svg class="i i-open" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+      <svg class="i i-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+  </div>
+</header>
+  <div class="menu" id="menu">
+  <div class="container menu-inner">
+    <nav class="menu-links" aria-label="Menu">
+      <a href="#reviews">Reviews <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="#services">Prices <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="#gallery">Nail art <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="#visit">Hours &amp; map <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="#contact">Book <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </nav>
+    <div class="menu-foot">
+      <a class="btn btn-brand" href="https://www.fresha.com/a/royal-bath-spa-nails-bath-3-beau-street-y4ey518a" target="_blank" rel="noopener">Book on Fresha</a>
+      <a class="btn btn-ghost" href="tel:+447900889999">Call 07900 889999</a>
+      <p>3 Beau Street, Bath BA1 1QY</p>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Nail salon · 3 Beau Street, Bath</p>
+        <h1 id="hero-title">Bring the photo. <em>Leave with the nails.</em></h1>
+        <p class="hero-lead">Hand-painted nail art, BIAB, gel colour and pedicures, in Bath’s Abbey district.</p>
+        <a class="rating-chip" href="#reviews">
+          <span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+          <span><strong>4.9</strong> <span class="muted">· 52 Google reviews</span></span>
+        </a>
+        <div class="hero-cta">
+          <a class="btn btn-brand" href="https://www.fresha.com/a/royal-bath-spa-nails-bath-3-beau-street-y4ey518a" target="_blank" rel="noopener">
+            <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M8 3v4M16 3v4M3.5 10h17"/></svg>
+            Book online
+          </a>
+          <a class="btn btn-ghost" href="tel:+447900889999">
+            <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.5 16.6v2.9a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 1.6 3.7 2 2 0 0 1 3.6 1.5h2.9a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L7.5 9.3a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.9 2.3z"/></svg>
+            Call
+          </a>
+        </div>
+        <p class="live" data-live><span class="dot" aria-hidden="true"></span><span data-live-text>Monday to Saturday, 9:30 am – 7:30 pm</span></p>
+      </div>
+
+      <div class="hero-media">
+        <div class="arch-frame">
+          <div class="arch">
+            <img src="assets/photos/photo-04.jpg" width="1200" height="1600" fetchpriority="high" decoding="async" alt="Inside the salon: cream boucle armchairs, a round marble table set with cakes, and a wall of gel colour charts">
+          </div>
+        </div>
+        <div class="oval">
+          <img src="assets/photos/photo-12.jpg" width="1170" height="1148" loading="lazy" decoding="async" alt="Almond nails with colour-pop French tips in pink, red, magenta and lilac, each finished with a dot">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROOF -->
+  <section class="section reviews" id="reviews" aria-labelledby="reviews-title">
+    <div class="container">
+      <div class="reviews-head reveal">
+        <p class="eyebrow">Google reviews</p>
+        <h2 id="reviews-title">Eleven reviews mention the relaxing atmosphere.</h2>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="score reveal">
+          <p class="score-num" aria-hidden="true">4.9</p>
+          <p class="sr-only">Rated 4.9 out of 5 on Google</p>
+          <span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+          <p class="score-meta">from <span data-count="52">52</span> Google reviews <span class="muted">· out of 5</span></p>
+          <a class="link-arrow" href="https://www.google.com/maps/place/?q=place_id:ChIJ3zgg01-BcUgRT_hQ7wwZ5sU" target="_blank" rel="noopener">
+            Read all 52 reviews on Google
+            <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
+        </div>
+
+        <div class="feature reveal">
+          <blockquote class="feature-quote">
+            <p>“Fantastic nail art, it came out even better than my reference photo- so talented.”</p>
+            <footer>
+              <cite>jessica H.</cite>
+              <span class="stars" role="img" aria-label="5 out of 5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+              <time datetime="2026-07-30">July 2026</time>
+            </footer>
+          </blockquote>
+          <div>
+            <p class="topics-label">What reviewers bring up most</p>
+            <ul class="topics">
+              <li>Relaxing atmosphere <b>11</b></li>
+              <li>Nail artist <b>4</b></li>
+              <li>Foot massage <b>3</b></li>
+              <li>Massage chairs <b>3</b></li>
+              <li>Modern salon <b>3</b></li>
+              <li>Talented team <b>3</b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rail" id="rail" tabindex="0" aria-label="More Google reviews, scroll sideways">
+      <article class="card">
+        <span class="stars" role="img" aria-label="5 out of 5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+        <blockquote><p>“I am visiting from Australia and was fitted in without an appointment for a BIAB infill and polish even though they were busy. The staff offered me water and a coca-cola on arrival. … The salon is modern, stylish and very clean.”</p></blockquote>
+        <footer><span class="avatar" aria-hidden="true">B</span><span><cite>Belinda C.</cite><time datetime="2026-08-01">August 2026</time></span></footer>
+      </article>
+      <article class="card">
+        <span class="stars" role="img" aria-label="5 out of 5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+        <blockquote><p>“As a man, finding a place that feels welcoming, professional, and comfortable is really important, and this salon exceeded my expectations. … The salon itself is spotless, stylish, and very relaxing.”</p></blockquote>
+        <footer><span class="avatar" aria-hidden="true">T</span><span><cite>Tùng N.</cite><time datetime="2026-04-30">April 2026</time></span></footer>
+      </article>
+      <article class="card">
+        <span class="stars" role="img" aria-label="5 out of 5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+        <blockquote><p>“My nail artist did such an amazing job at my nails and recreated the design I showed her perfectly! She was super lovely and made me feel at ease whilst also being very efficient, completing my nails quickly. The interior of Royal Bath was very nice and peaceful…”</p></blockquote>
+        <footer><span class="avatar" aria-hidden="true">M</span><span><cite>Millie W.</cite><time datetime="2026-06-27">June 2026</time></span></footer>
+      </article>
+      <article class="card">
+        <span class="stars" role="img" aria-label="5 out of 5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+        <blockquote><p>“Attention to detail and what the clients want in terms of colour, shape and design is excellent. They truly made my birthday a wonderful experience. The pricing is also very reasonable- I had my acrylics taken off, a new set and nail art all in one session.”</p></blockquote>
+        <footer><span class="avatar" aria-hidden="true">L</span><span><cite>Lauren W.</cite><time datetime="2026-05-26">May 2026</time></span></footer>
+      </article>
+      <article class="card">
+        <span class="stars" role="img" aria-label="5 out of 5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+        <blockquote><p>“The staff were incredibly friendly, welcoming, and efficient throughout my visit, they even provided refreshments. Partway through my appointment, I decided to add some floral nail art, and my nail technician was more than happy to accommodate the change, which I really appreciated.”</p></blockquote>
+        <footer><span class="avatar" aria-hidden="true">M</span><span><cite>Mint</cite><time datetime="2026-06-08">June 2026</time></span></footer>
+      </article>
+      <article class="card">
+        <span class="stars" role="img" aria-label="5 out of 5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+        <blockquote><p>“Really great service and fantastic nails. I am so happy with them and the atmosphere in there was amazing. Staff were so friendly and kind and offered me a Diet Coke! I have already booked in for next time I was so impressed”</p></blockquote>
+        <footer><span class="avatar" aria-hidden="true">S</span><span><cite>Stasia</cite><time datetime="2026-04-29">April 2026</time></span></footer>
+      </article>
+      <article class="card">
+        <span class="stars" role="img" aria-label="5 out of 5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+        <blockquote><p>“The best nails i have done in Bath ! Service was amazing, the staff were very friendly and i loved that they did exactly what i wanted! I’ll definitely go over again soon xx”</p></blockquote>
+        <footer><span class="avatar" aria-hidden="true">M</span><span><cite>Mona G.</cite><time datetime="2026-06-01">June 2026</time></span></footer>
+      </article>
+    </div>
+
+    <div class="container rail-bar">
+      <div class="rail-btns">
+        <button class="rail-btn" type="button" data-rail="-1" aria-label="Previous reviews" aria-controls="rail"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <button class="rail-btn" type="button" data-rail="1" aria-label="Next reviews" aria-controls="rail"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section services" id="services" aria-labelledby="services-title">
+    <div class="container">
+      <div class="services-head reveal">
+        <div>
+          <p class="eyebrow">Prices</p>
+          <h2 id="services-title">Hands, feet, and the art in between.</h2>
+        </div>
+        <p>Published prices from the salon’s Fresha page, where 24 treatments are listed in all.</p>
+      </div>
+
+      <div class="menu-cols">
+        <div class="menu-group reveal">
+          <h3>Hands <small>Gel · BIAB · art</small></h3>
+          <ul class="price-list">
+            <li>
+              <svg class="swatch" aria-hidden="true" fill="url(#g-ombre)"><use href="#nail"/></svg>
+              <span><span class="svc-name">BIAB infill</span><span class="svc-time">1 hr</span></span>
+              <span class="svc-price"><small>From</small>£35</span>
+            </li>
+            <li>
+              <svg class="swatch" aria-hidden="true" fill="#E8708F"><use href="#nail"/></svg>
+              <span><span class="svc-name">Manicure gel colour</span><span class="svc-time">30 min</span></span>
+              <span class="svc-price"><small>From</small>£35</span>
+            </li>
+            <li>
+              <svg class="swatch" aria-hidden="true"><use href="#nail-dots"/></svg>
+              <span><span class="svc-name">Nail art</span><span class="svc-time">30 min</span></span>
+              <span class="svc-price"><small>From</small>£5</span>
+            </li>
+          </ul>
+          <p class="menu-note">
+            <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 4.6L18.5 9l-4.7 1.4L12 15l-1.8-4.6L5.5 9l4.7-1.4z"/><path d="M18 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg>
+            <span>Reviewers also mention acrylic sets and removals. Ask when you book.</span>
+          </p>
+        </div>
+
+        <div class="menu-group reveal">
+          <h3>Feet <small>Pedicures</small></h3>
+          <ul class="price-list">
+            <li>
+              <svg class="swatch" aria-hidden="true" fill="#E2793E"><use href="#nail"/></svg>
+              <span><span class="svc-name">Luxury pedicure and gel colour</span><span class="svc-time">1 hr</span></span>
+              <span class="svc-price">£65</span>
+            </li>
+            <li>
+              <svg class="swatch" aria-hidden="true" fill="#F0B8C8"><use href="#nail"/></svg>
+              <span><span class="svc-name">Pedicure gel colour</span><span class="svc-time">40 min</span></span>
+              <span class="svc-price"><small>From</small>£45</span>
+            </li>
+            <li>
+              <svg class="swatch" aria-hidden="true" fill="#F2C53D"><use href="#nail"/></svg>
+              <span><span class="svc-name">Toes gel colour</span><span class="svc-time">30 min</span></span>
+              <span class="svc-price"><small>From</small>£30</span>
+            </li>
+          </ul>
+          <p class="menu-note">
+            <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 4.6L18.5 9l-4.7 1.4L12 15l-1.8-4.6L5.5 9l4.7-1.4z"/><path d="M18 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg>
+            <span>The massage chairs and the foot massage come up again and again in reviews.</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="services-foot reveal">
+        <p>The full list of 24 treatments, with live availability, is on Fresha.</p>
+        <a class="btn btn-gold" href="https://www.fresha.com/a/royal-bath-spa-nails-bath-3-beau-street-y4ey518a" target="_blank" rel="noopener">
+          See all 24 treatments
+          <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section gallery" id="gallery" aria-labelledby="gallery-title">
+    <div class="container">
+      <div class="gallery-head reveal">
+        <div>
+          <p class="eyebrow">Recent sets</p>
+          <h2 id="gallery-title">Fish, starfish, daisies, <em>milky ombré.</em></h2>
+        </div>
+        <p>Bring a screenshot, a colour, or a half-formed idea. Nail art is priced from £5, and reviewers say the result matches what they showed.</p>
+      </div>
+
+      <div class="g-wrap reveal">
+        <div class="g-grid">
+          <button class="g-item g-2x2" type="button" data-lb data-caption="Seaside set: an orange fish, a sun, blue stars, navy polka dots and pink stripes">
+            <img src="assets/photos/photo-02.jpg" width="1554" height="1600" loading="lazy" decoding="async" style="object-position:50% 55%" alt="Hand-painted seaside nails against Bath stone: an orange fish, a sun, blue stars, navy polka dots and pink stripes">
+          </button>
+          <button class="g-item g-1x2" type="button" data-lb data-caption="Pink almond gel with a 3D flower">
+            <img src="assets/photos/photo-14.jpg" width="1200" height="1600" loading="lazy" decoding="async" style="object-position:55% 35%" alt="Pink almond gel nails with a 3D cream flower on one nail">
+          </button>
+          <button class="g-item" type="button" data-lb data-caption="Colour-pop French tips with dots">
+            <img src="assets/photos/photo-12.jpg" width="1170" height="1148" loading="lazy" decoding="async" style="object-position:45% 60%" alt="Almond nails with French tips in pink, red, magenta and lilac, each with a small dot">
+          </button>
+          <button class="g-item" type="button" data-lb data-caption="Sheer pink shimmer, short and rounded">
+            <img src="assets/photos/photo-11.jpg" width="1200" height="1600" loading="lazy" decoding="async" style="object-position:55% 38%" alt="Short rounded nails in sheer pink shimmer">
+          </button>
+          <button class="g-item g-1x2" type="button" data-lb data-caption="Milky pink-to-white ombré, short square">
+            <img src="assets/photos/photo-05.jpg" width="1200" height="1600" loading="lazy" decoding="async" style="object-position:45% 50%" alt="Short square nails in milky pink-to-white ombré">
+          </button>
+          <button class="g-item g-1x2" type="button" data-lb data-caption="The seaside set, finished">
+            <img src="assets/photos/photo-01.jpg" width="900" height="1600" loading="lazy" decoding="async" style="object-position:50% 62%" alt="Seaside nail art: a blue fish, a starfish on pink, a sun, polka dots and yellow stripes">
+          </button>
+          <button class="g-item g-2x1" type="button" data-lb data-caption="Seaside set in pastels">
+            <img src="assets/photos/photo-03.jpg" width="1600" height="1422" loading="lazy" decoding="async" style="object-position:50% 55%" alt="Pastel seaside nails: blue fish, pink starfish, blue polka dots, orange stripes and a sunburst thumb">
+          </button>
+          <button class="g-item" type="button" data-lb data-caption="Almond French tips with a painted daisy">
+            <img src="assets/photos/photo-10.jpg" width="971" height="1600" loading="lazy" decoding="async" style="object-position:60% 22%" alt="Almond French tips with a white daisy painted on one nail">
+          </button>
+          <a class="g-tile" href="https://www.fresha.com/a/royal-bath-spa-nails-bath-3-beau-street-y4ey518a" target="_blank" rel="noopener">
+            <small>Nail art</small>
+            <strong>from £5</strong>
+            <span>Book on Fresha <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+      <div class="lb-top">
+        <span data-lb-count></span>
+        <button class="lb-btn" type="button" data-lb-close aria-label="Close photo viewer"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      </div>
+      <div class="lb-stage"><img data-lb-img alt=""></div>
+      <div class="lb-bottom">
+        <button class="lb-btn" type="button" data-lb-step="-1" aria-label="Previous photo"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <p data-lb-cap></p>
+        <button class="lb-btn" type="button" data-lb-step="1" aria-label="Next photo"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></button>
+      </div>
+    </dialog>
+  </section>
+
+  <!-- VISIT -->
+  <section class="section visit" id="visit" aria-labelledby="visit-title">
+    <div class="container">
+      <div class="visit-head reveal">
+        <p class="eyebrow">Visit</p>
+        <h2 id="visit-title">3 Beau Street, in Bath’s Abbey district.</h2>
+        <p>Close to public transport. Look for the name above the bay window.</p>
+      </div>
+
+      <div class="visit-grid">
+        <div class="hours-card reveal">
+          <div class="hours-top">
+            <h3>Opening hours</h3>
+            <p class="live" data-live><span class="dot" aria-hidden="true"></span><span data-live-text>Closed on Sundays</span></p>
+          </div>
+          <table class="hours">
+            <caption class="sr-only">Opening hours, Monday to Sunday</caption>
+            <tbody>
+              <tr data-day="monday"><th scope="row">Monday</th><td>9:30 am – 7:30 pm</td></tr>
+              <tr data-day="tuesday"><th scope="row">Tuesday</th><td>9:30 am – 7:30 pm</td></tr>
+              <tr data-day="wednesday"><th scope="row">Wednesday</th><td>9:30 am – 7:30 pm</td></tr>
+              <tr data-day="thursday"><th scope="row">Thursday</th><td>9:30 am – 7:30 pm</td></tr>
+              <tr data-day="friday"><th scope="row">Friday</th><td>9:30 am – 7:30 pm</td></tr>
+              <tr data-day="saturday"><th scope="row">Saturday</th><td>9:30 am – 7:30 pm</td></tr>
+              <tr data-day="sunday" class="is-closed"><th scope="row">Sunday</th><td>Closed</td></tr>
+            </tbody>
+          </table>
+          <div class="address">
+            <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10.5c0 6-8 11.5-8 11.5s-8-5.5-8-11.5a8 8 0 0 1 16 0z"/><circle cx="12" cy="10.5" r="2.8"/></svg>
+            <p><strong>3 Beau Street, Bath BA1 1QY</strong><span>Abbey district, near public transport</span></p>
+          </div>
+          <div class="visit-actions">
+            <a class="btn btn-brand" href="https://www.google.com/maps/dir/?api=1&amp;destination=Royal%20Bath%20Spa%20Nails%2C%20Beau%20St%2C%20Bath%2C%20BA1%201QY" target="_blank" rel="noopener">
+              <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 21 3l-8 18-2-8z"/></svg>
+              Directions
+            </a>
+            <a class="btn btn-ghost" href="tel:+447900889999">
+              <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.5 16.6v2.9a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 1.6 3.7 2 2 0 0 1 3.6 1.5h2.9a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L7.5 9.3a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.9 2.3z"/></svg>
+              Call
+            </a>
+          </div>
+        </div>
+
+        <figure class="shopfront reveal">
+          <div class="frame">
+            <img src="assets/photos/photo-06.jpg" width="1200" height="1600" loading="lazy" decoding="async" alt="A client's fresh nails held up outside the Royal Bath Spa Nails shopfront on Beau Street">
+          </div>
+          <figcaption>Fresh nails, outside the shop on Beau Street.</figcaption>
+        </figure>
+      </div>
+
+      <div class="map reveal">
+        <div class="map-fallback">
+          <a href="https://www.google.com/maps/place/?q=place_id:ChIJ3zgg01-BcUgRT_hQ7wwZ5sU" target="_blank" rel="noopener">Open the map in Google Maps</a>
+        </div>
+        <iframe src="https://www.google.com/maps?q=Royal%20Bath%20Spa%20Nails%2C%20Beau%20St%2C%20Bath%2C%20BA1%201QY&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map showing Royal Bath Spa Nails on Beau Street, Bath"></iframe>
+      </div>
+      <a class="link-arrow map-link" href="https://www.google.com/maps/place/?q=place_id:ChIJ3zgg01-BcUgRT_hQ7wwZ5sU" target="_blank" rel="noopener">
+        Open in Google Maps
+        <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact" aria-labelledby="contact-title">
+    <div class="container contact-grid">
+      <div class="contact-copy reveal">
+        <p class="eyebrow">Book</p>
+        <h2 id="contact-title">Pick a time on Fresha, or ring the salon.</h2>
+        <p>Tam, Hannah and Eric are listed on the booking page. In Bath for the day? Call and ask about a same-day slot.</p>
+      </div>
+      <div class="contact-list reveal">
+        <a href="https://www.fresha.com/a/royal-bath-spa-nails-bath-3-beau-street-y4ey518a" target="_blank" rel="noopener">
+          <span class="c-icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M8 3v4M16 3v4M3.5 10h17"/></svg></span>
+          <span><span class="c-title">Book online</span><span class="c-sub">On Fresha: choose a treatment, then a time</span></span>
+          <svg class="i c-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+        <a href="tel:+447900889999">
+          <span class="c-icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.5 16.6v2.9a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 1.6 3.7 2 2 0 0 1 3.6 1.5h2.9a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L7.5 9.3a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.9 2.3z"/></svg></span>
+          <span><span class="c-title">07900 889999</span><span class="c-sub">Call Monday to Saturday, 9:30 am – 7:30 pm</span></span>
+          <svg class="i c-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="sms:+447900889999?&amp;body=Hello%20Royal%20Bath%20Spa%20Nails%2C%20I%27d%20like%20to%20book%20an%20appointment.%20Could%20you%20tell%20me%20which%20times%20are%20free%3F%20Thank%20you.">
+          <span class="c-icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 15a2 2 0 0 1-2 2H7.5l-4 4V5a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 12.5h5"/></svg></span>
+          <span><span class="c-title">Send a text</span><span class="c-sub">A message to book is written for you</span></span>
+          <svg class="i c-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Royal%20Bath%20Spa%20Nails%2C%20Beau%20St%2C%20Bath%2C%20BA1%201QY" target="_blank" rel="noopener">
+          <span class="c-icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 21 3l-8 18-2-8z"/></svg></span>
+          <span><span class="c-title">Get directions</span><span class="c-sub">3 Beau Street, Bath BA1 1QY</span></span>
+          <svg class="i c-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="wordmark" href="#top" aria-label="Royal Bath Spa Nails, back to top">
+          <svg aria-hidden="true"><use href="#i-crown"/></svg>
+          <span>Royal Bath Spa Nails</span>
+        </a>
+        <p class="footer-tag">Nail art, BIAB, gel colour and pedicures on Beau Street, Bath.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Find us</h3>
+        <p>3 Beau Street<br>Bath BA1 1QY</p>
+        <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Royal%20Bath%20Spa%20Nails%2C%20Beau%20St%2C%20Bath%2C%20BA1%201QY" target="_blank" rel="noopener">Directions</a>
+      </div>
+      <div class="footer-col">
+        <h3>Hours</h3>
+        <p>Monday to Saturday<br>9:30 am – 7:30 pm<br>Sunday closed</p>
+      </div>
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <a href="tel:+447900889999">07900 889999</a>
+        <a href="https://www.fresha.com/a/royal-bath-spa-nails-bath-3-beau-street-y4ey518a" target="_blank" rel="noopener">Book on Fresha</a>
+      </div>
+    </div>
+    <div class="footer-small">
+      <p>© <span data-year></span> Royal Bath Spa Nails</p>
+      <p>Reviews quoted from Google. Prices as listed on Fresha.</p>
+    </div>
+  </div>
+</footer>
+
+<nav class="action-bar" aria-label="Quick actions">
+  <a class="primary" href="tel:+447900889999">
+    <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.5 16.6v2.9a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 1.6 3.7 2 2 0 0 1 3.6 1.5h2.9a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L7.5 9.3a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.9 2.3z"/></svg>
+    Call
+  </a>
+  <a href="sms:+447900889999?&amp;body=Hello%20Royal%20Bath%20Spa%20Nails%2C%20I%27d%20like%20to%20book%20an%20appointment.%20Could%20you%20tell%20me%20which%20times%20are%20free%3F%20Thank%20you.">
+    <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 15a2 2 0 0 1-2 2H7.5l-4 4V5a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 12.5h5"/></svg>
+    Text
+  </a>
+  <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Royal%20Bath%20Spa%20Nails%2C%20Beau%20St%2C%20Bath%2C%20BA1%201QY" target="_blank" rel="noopener">
+    <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 21 3l-8 18-2-8z"/></svg>
+    Directions
+  </a>
+</nav>
+
+<script>
+(() => {
+  const d = document, root = d.documentElement;
+  root.classList.add('js');
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* Header + menu */
+  const header = d.querySelector('.site-header');
+  const onScroll = () => header.classList.toggle('is-scrolled', scrollY > 8);
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  const burger = d.querySelector('.burger'), menu = d.getElementById('menu');
+  const setMenu = open => {
+    burger.setAttribute('aria-expanded', String(open));
+    burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    menu.classList.toggle('is-open', open);
+    d.body.classList.toggle('menu-open', open);
+  };
+  burger.addEventListener('click', () => setMenu(burger.getAttribute('aria-expanded') !== 'true'));
+  menu.addEventListener('click', e => { if (e.target.closest('a')) setMenu(false); });
+  d.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && burger.getAttribute('aria-expanded') === 'true') { setMenu(false); burger.focus(); }
+  });
+  matchMedia('(min-width: 960px)').addEventListener('change', e => { if (e.matches) setMenu(false); });
+
+  /* Opening hours: today + live status (Europe/London time) */
+  const HOURS = {
+    monday: '9:30 am–7:30 pm', tuesday: '9:30 am–7:30 pm', wednesday: '9:30 am–7:30 pm',
+    thursday: '9:30 am–7:30 pm', friday: '9:30 am–7:30 pm', saturday: '9:30 am–7:30 pm', sunday: 'Closed'
+  };
+  const DAYS = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+  const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
+  const toMin = s => {
+    const m = String(s).trim().toLowerCase().match(/^(\d{1,2})(?:[:.h](\d{2}))?\s*(am|pm)?$/);
+    if (!m) return null;
+    let h = +m[1] % 24; const mi = +(m[2] || 0);
+    if (m[3] === 'pm' && h < 12) h += 12;
+    if (m[3] === 'am' && h === 12) h = 0;
+    return { v: h * 60 + mi, mer: !!m[3] };
+  };
+  const ranges = v => {
+    if (!v || /closed|fermé/i.test(v)) return [];
+    if (/24\s*h|24 hours/i.test(v)) return [[0, 1440]];
+    return v.split(/[,;]/).map(r => {
+      const p = r.split(/\s*[–—-]\s*|\s+to\s+/i);
+      if (p.length < 2) return null;
+      const a = toMin(p[0]), b = toMin(p[1]);
+      if (!a || !b) return null;
+      let s = a.v, e = b.v;
+      if (!a.mer && b.mer && b.v >= 720 && s + 720 < e) s += 720;
+      if (e <= s) e += 1440;
+      return [s, e];
+    }).filter(Boolean).sort((x, y) => x[0] - y[0]);
+  };
+  const fmt = m => {
+    m %= 1440; const h = Math.floor(m / 60), mi = m % 60;
+    return (h % 12 || 12) + (mi ? ':' + String(mi).padStart(2, '0') : '') + (h < 12 ? ' am' : ' pm');
+  };
+  const now = () => {
+    try {
+      const p = new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/London', weekday: 'long', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).formatToParts(new Date());
+      const g = t => p.find(x => x.type === t).value;
+      const day = DAYS.indexOf(g('weekday').toLowerCase());
+      if (day < 0) throw 0;
+      return { day, min: (+g('hour') % 24) * 60 + +g('minute') };
+    } catch (e) { const n = new Date(); return { day: n.getDay(), min: n.getHours() * 60 + n.getMinutes() }; }
+  };
+  const status = () => {
+    const { day, min } = now();
+    const today = ranges(HOURS[DAYS[day]]), yest = ranges(HOURS[DAYS[(day + 6) % 7]]);
+    for (const [, e] of yest) if (e > 1440 && min < e - 1440) return { day, state: e - 1440 - min <= 60 ? 'soon' : 'open', until: e };
+    for (const [s, e] of today) if (min >= s && min < e) return { day, state: e - min <= 60 ? 'soon' : 'open', until: e, allDay: s === 0 && e === 1440 };
+    for (const [s] of today) if (s > min) return { day, state: 'closed', next: s, inDays: 0 };
+    for (let i = 1; i <= 7; i++) {
+      const r = ranges(HOURS[DAYS[(day + i) % 7]]);
+      if (r.length) return { day, state: 'closed', next: r[0][0], inDays: i, nextDay: DAYS[(day + i) % 7] };
+    }
+    return { day, state: 'none' };
+  };
+  const paintHours = () => {
+    const st = status();
+    let html = '';
+    if (st.state === 'open') html = st.allDay ? '<strong>Open now</strong> · 24 hours' : `<strong>Open now</strong> · until ${fmt(st.until)}`;
+    else if (st.state === 'soon') html = `<strong>Closing soon</strong> · until ${fmt(st.until)}`;
+    else if (st.state === 'closed') {
+      const when = st.inDays === 0 ? 'today' : st.inDays === 1 ? 'tomorrow' : cap(st.nextDay);
+      html = `<strong>Closed</strong> · opens ${when} at ${fmt(st.next)}`;
+    }
+    d.querySelectorAll('[data-live]').forEach(el => {
+      if (!html) { el.hidden = true; return; }
+      el.dataset.state = st.state;
+      el.querySelector('[data-live-text]').innerHTML = html;
+    });
+    d.querySelectorAll('.hours tr[data-day]').forEach(tr => {
+      const isToday = tr.dataset.day === DAYS[st.day];
+      tr.classList.toggle('is-today', isToday);
+      if (isToday) tr.setAttribute('aria-current', 'date'); else tr.removeAttribute('aria-current');
+      const th = tr.querySelector('th'); let tag = th.querySelector('.today-tag');
+      if (isToday && !tag) { tag = d.createElement('span'); tag.className = 'today-tag'; tag.textContent = 'Today'; th.append(tag); }
+      if (!isToday && tag) tag.remove();
+    });
+  };
+  paintHours(); setInterval(paintHours, 60000);
+
+  /* Review rail */
+  const rail = d.getElementById('rail');
+  const btns = d.querySelectorAll('[data-rail]');
+  const step = () => { const c = rail.querySelector('.card'); return c ? c.getBoundingClientRect().width + 16 : 320; };
+  btns.forEach(b => b.addEventListener('click', () => rail.scrollBy({ left: step() * +b.dataset.rail, behavior: reduce ? 'auto' : 'smooth' })));
+  const railState = () => {
+    btns[0].disabled = rail.scrollLeft < 8;
+    btns[1].disabled = rail.scrollLeft + rail.clientWidth >= rail.scrollWidth - 8;
+  };
+  rail.addEventListener('scroll', railState, { passive: true }); addEventListener('resize', railState); railState();
+
+  /* Lightbox */
+  const dlg = d.getElementById('lightbox');
+  const items = [...d.querySelectorAll('[data-lb]')];
+  const lbImg = dlg.querySelector('[data-lb-img]'), lbCap = dlg.querySelector('[data-lb-cap]'), lbCount = dlg.querySelector('[data-lb-count]');
+  let idx = 0;
+  const show = i => {
+    idx = (i + items.length) % items.length;
+    const im = items[idx].querySelector('img');
+    lbImg.src = im.getAttribute('src'); lbImg.alt = im.alt;
+    lbCap.textContent = items[idx].dataset.caption || '';
+    lbCount.textContent = (idx + 1) + ' / ' + items.length;
+  };
+  if (typeof dlg.showModal === 'function') {
+    items.forEach((b, i) => b.addEventListener('click', () => { show(i); dlg.showModal(); }));
+    dlg.querySelector('[data-lb-close]').addEventListener('click', () => dlg.close());
+    dlg.querySelectorAll('[data-lb-step]').forEach(b => b.addEventListener('click', () => show(idx + +b.dataset.lbStep)));
+    dlg.addEventListener('keydown', e => { if (e.key === 'ArrowRight') show(idx + 1); if (e.key === 'ArrowLeft') show(idx - 1); });
+    dlg.addEventListener('click', e => { if (e.target === dlg || e.target.classList.contains('lb-stage')) dlg.close(); });
+    dlg.addEventListener('close', () => items[idx].focus());
+    let x0 = null;
+    dlg.addEventListener('touchstart', e => { x0 = e.touches[0].clientX; }, { passive: true });
+    dlg.addEventListener('touchend', e => {
+      if (x0 === null) return; const dx = e.changedTouches[0].clientX - x0; x0 = null;
+      if (Math.abs(dx) > 40) show(idx + (dx < 0 ? 1 : -1));
+    });
+  }
+
+  /* Reveal + count-up */
+  const countUp = el => {
+    const end = +el.dataset.count, t0 = performance.now(), dur = 1200;
+    const tick = t => { const p = Math.min(1, (t - t0) / dur); el.textContent = Math.round(end * (1 - Math.pow(1 - p, 3))); if (p < 1) requestAnimationFrame(tick); };
+    requestAnimationFrame(tick);
+  };
+  const pending = [...d.querySelectorAll('.reveal, [data-count]')];
+  const sweep = () => {
+    const lim = innerHeight * .94;
+    for (let i = pending.length - 1; i >= 0; i--) {
+      const el = pending[i];
+      if (el.getBoundingClientRect().top > lim) continue;
+      if (el.dataset.count) { if (!reduce) countUp(el); } else el.classList.add('is-in');
+      pending.splice(i, 1);
+    }
+    if (!pending.length) removeEventListener('scroll', onSweep);
+  };
+  let ticking = false;
+  const onSweep = () => { if (!ticking) { ticking = true; requestAnimationFrame(() => { ticking = false; sweep(); }); } };
+  if (reduce) d.querySelectorAll('.reveal').forEach(el => el.classList.add('is-in'));
+  addEventListener('scroll', onSweep, { passive: true }); addEventListener('resize', onSweep); sweep();
+
+  d.querySelectorAll('[data-year]').forEach(el => { el.textContent = new Date().getFullYear(); });
+})();
+</script>
+<!--sf:preview--><div style="padding:18px 16px;font:13px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;text-align:center;background:#0f0f10;color:#a3a3a8">Preview made by Aymen Jallouli for Royal Bath Spa Nails: this is not yet the business's official website.</div><!--/sf:preview-->
+<!--sf:track--><script>(function(){try{var q=new URLSearchParams(location.search),r=q.get('r')||sessionStorage.getItem('sf_r');if(!r)return;sessionStorage.setItem('sf_r',r);navigator.sendBeacon("https://track.aymenjallouli.dev/t"+'?r='+encodeURIComponent(r)+'&p='+encodeURIComponent(location.pathname));}catch(e){}})();</script><!--/sf:track-->
+</body>
+</html>
